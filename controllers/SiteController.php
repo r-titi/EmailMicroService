@@ -15,24 +15,6 @@ class SiteController extends Controller
 
     public function actionSendEmail()
     {
-        $request = Yii::$app->request;
-        $key = $request->get('key');
-        $value = $request->get('value');
-        $to = $request->post('to');
-        $from = $request->post('from');
-        $subject = $request->post('subject');
-        $body = $request->post('body');
         
-        Yii::$app->queue->push(new EmailJob([
-            'to' => $to,
-            'from' => $from,
-            'subject' => $subject,
-            'body' => $body
-        ]));
-
-        return [
-            'status' => Status::STATUS_OK,
-            'message' => 'send email',
-        ];
     }
 }

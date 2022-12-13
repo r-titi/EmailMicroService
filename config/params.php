@@ -12,4 +12,6 @@ return [
      * https://www.yiiframework.com/doc/guide/2.0/en/rest-rate-limiting
      */
     'useRateLimiter' => false,
+    'to_email' => 'r.titi@syarah.com',
+    'from_email' => 'r.titi@syarah.com',
 ];

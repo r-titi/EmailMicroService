@@ -49,6 +49,10 @@ return [
             'enableCsrfCookie' => false,
         ],
         'db' => $db,
+        'mongodb' => [
+            'class' => '\yii\mongodb\Connection',
+            'dsn' => 'mongodb://127.0.0.1:27017/corapi',
+        ],
         'queue' => [
             'class' => \yii\queue\db\Queue::class,
             'db' => 'db', // DB connection component or its config 

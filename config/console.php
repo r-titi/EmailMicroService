@@ -7,7 +7,7 @@ $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'queue'],
-    'controllerNamespace' => 'app\console\controllers',
+    'controllerNamespace' => 'app\commands',
     'controllerMap' => [
         'migrate' => [
             'class' => 'yii\console\controllers\MigrateController',
@@ -43,6 +43,10 @@ $config = [
             ],
         ],
         'db' => $db,
+        'mongodb' => [
+            'class' => '\yii\mongodb\Connection',
+            'dsn' => 'mongodb://127.0.0.1:27017/corapi',
+        ]
     ],
     'params' => $params,
 ];
