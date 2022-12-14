@@ -61,8 +61,8 @@ return [
              'transport' => [
                  'class' => 'Swift_SmtpTransport',
                  'host' => 'email-smtp.us-east-1.amazonaws.com',// amazon smtp host
-                 'username' => 'AKIAQP5CTUKTJKNZ5MHO',// ses user username
-                 'password' => 'BD4utMVzJ1y0OIopy6xFOEfbiAqnQO6rCie3c8NvAHNx',// ses user password
+                 'username' => 'AKIAQP5CTUKTKJDRCVMV',// ses user username
+                 'password' => 'BJGPKzA9WC8P7G6NhrNFijcCvKCL7D9QzF/fVW6tDLEC',// ses user password
                  'port' => '587',
                  'encryption' => 'tls',
              ],
